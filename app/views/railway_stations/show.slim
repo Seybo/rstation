@@ -1,0 +1,13 @@
+h3
+  'Showing station
+
+p 
+  strong
+    'Name:
+= @railway_station.name
+
+p
+  = link_to 'Edit', edit_railway_station_path(@railway_station)
+  '  | 
+  = link_to 'Delete', @railway_station, method: :delete, data: { confirm: 'Are you sure?' }
+= link_to 'Back to stations list', railway_stations_path 

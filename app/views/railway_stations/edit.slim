@@ -1,0 +1,8 @@
+h3
+  'Edit station
+
+= simple_form_for(@railway_station) do |f|
+    = f.input :name
+    = f.button :submit, 'Edit'
+
+= link_to 'Back to stations list', railway_stations_path 

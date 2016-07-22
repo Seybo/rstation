@@ -1,0 +1,21 @@
+h3
+  'Railway stations list
+
+table
+  thead
+    tr
+      th
+        'Name
+      th colspan='3'
+        'Actions
+  tbody
+    - @railway_stations.each do |station|
+      tr
+        td
+          = station.name
+        td
+          = link_to 'Edit', edit_railway_station_path(station)  
+        td
+          = link_to 'Delete', station, method: :delete, data: { confirm: 'Are you sure?' }
+
+= link_to 'Add new station', new_railway_station_path
