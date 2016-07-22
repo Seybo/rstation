@@ -8,15 +8,14 @@ Bundler.require(*Rails.groups)
 
 module Rstation
   class Application < Rails::Application
-
     config.generators do |g|
       g.test_framework :rspec,
-        fixtures: true,
-        view_specs: false,
-        helper_specs: false,
-        routing_specs: false,
-        controller_specs: false,
-        request_specs: false
+                       fixtures: true,
+                       view_specs: false,
+                       helper_specs: false,
+                       routing_specs: false,
+                       controller_specs: false,
+                       request_specs: false
       g.fixture_replacement :factory_girl, dir: "spec/factories"
     end
 
@@ -33,8 +32,7 @@ module Rstation
     # config.i18n.default_locale = :de
 
     # For Foundation 5
-    config.assets.precompile += %w( vendor/modernizr )
-
+    config.assets.precompile += %w(vendor/modernizr)
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
