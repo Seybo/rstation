@@ -1,0 +1,13 @@
+h3
+  'Showing train
+
+p 
+  strong
+    'Number:
+= @train.number
+
+p
+  = link_to 'Edit', edit_train_path(@train)
+  '  | 
+  = link_to 'Delete', @train, method: :delete, data: { confirm: 'Are you sure?' }
+= link_to 'Back to trains list', trains_path 
