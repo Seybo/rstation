@@ -1,0 +1,8 @@
+h3
+  'New Route
+
+= simple_form_for(@route) do |f|
+    = f.input :name
+    = f.button :submit, 'Create'
+
+= link_to 'Back to routes list', routes_path 

@@ -1,0 +1,13 @@
+h3
+  'Showing Route
+
+p 
+  strong
+    'Name:
+= @route.name
+
+p
+  = link_to 'Edit', edit_route_path(@route)
+  '  | 
+  = link_to 'Delete', @route, method: :delete, data: { confirm: 'Are you sure?' }
+= link_to 'Back to routes list', routes_path 
