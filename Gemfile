@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sprockets', '3.6.3'
+gem 'devise'
 group :development, :test do
   gem 'byebug'
 end
