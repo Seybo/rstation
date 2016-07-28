@@ -14,6 +14,6 @@
  * require_self
  */
 
- @import "foundation",
-         "foundation_and_overrides",
-         "foundation_custom"
+@import "foundation_and_overrides";
+@import "foundation";
+@import "foundation_custom"
